@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/Horca.ico">
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="body">
+    <header id="header">
+        <a href="https://www.aluracursos.com/" target="_blank"><img src="imagenes/Alura.jpg" alt="logo__Alura" id="header_logo"></a>
+        <h1>Juego del Ahorcado</h1>
+    </header>
+    <div class="pizarra-acciones">
+        <canvas width="600" height="400"></canvas>
+        <div class="acciones">
+            <div class="botones">
+                <button class="nueva-palabra">Nueva Palabra</button>
+                <button class="rendirse botonOff">Rendirse</button>
+                <button class="salida" onclick="javascript:window.close();">Exit</button>
+            </div>
+            <div class="keywords" class="controller">
+                <ul  class="lista-letras" class="teclado">
+    <!-- Aqui si dibujan las teclas, con su Clase y Id, ambas el valor es la letra -->
+                </ul>
+            </div>
+            <span class="intentos-restantes">Estoy a punto de ser ahorcado. <br>Por favor, sálvalo! 🙏🙏</span>
+            <span class="palabra"></span>
+        </div>
+    </div>
+
+    <footer>
+        <div class="redes">
+            <span class="copyrigth">&#169; Victor Javier - 2022</span>
+            <br><br>
+            <a href="https://github.com/viticojavier/Ahorcado_Chalenge02.git" target="_blank"><img class="imgRedes" src="Imagenes/IconoGithub.png" alt="Github"></a>
+            <a href="https://www.linkedin.com/in/victor-javier-hernandez-jose-5ba09582/" target="_blank"><img class="imgRedes" src="Imagenes/IconoLinkedin.png" alt="Linkedin"></a>
+            <a href="mailto:viticojavier@hotmail.com" target="_blank"><img class="imgRedes" src="Imagenes/Hotmail.png" alt="Hotmail"></a>
+        </div>
+    </footer>
+    <script src="js/makeKeyboard.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
